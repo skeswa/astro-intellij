@@ -1,4 +1,4 @@
-package io.astrolib.jvx.psi.element;
+package io.astrolib.jvx.psi.file.elements;
 
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.LighterASTNode;
@@ -14,7 +14,7 @@ import io.astrolib.jvx.psi.JVXLanguage;
 import io.astrolib.jvx.psi.parser.JVXParser;
 import io.astrolib.jvx.psi.parser.JVXParserUtil;
 import io.astrolib.jvx.psi.stub.JVXLightStubBuilder;
-import io.astrolib.jvx.psi.stub.PsiJVXFileStubImpl;
+import io.astrolib.jvx.psi.stub.impls.PsiJVXFileStubImpl;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;

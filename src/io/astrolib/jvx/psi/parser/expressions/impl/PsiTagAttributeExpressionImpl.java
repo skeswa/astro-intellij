@@ -18,7 +18,7 @@ import static com.intellij.psi.impl.source.tree.ElementType.EXPRESSION_BIT_SET;
  * @author skeswa
  */
 public class PsiTagAttributeExpressionImpl extends CompositePsiElement implements PsiTagAttributeExpression {
-    private static final Logger LOG = Logger.getInstance("#io.astrolib.jvx.psi.parser.expressions.impl.PsiTagAttributeExpressionImpl");
+    private static final Logger LOG = Logger.getInstance("#io.astrolib.jvx.psi.parser.expressions.impls.PsiTagAttributeExpressionImpl");
 
     public PsiTagAttributeExpressionImpl() {
         super(TAG_ATTRIBUTE_EXPRESSION);

@@ -1,4 +1,4 @@
-package io.astrolib.jvx.psi.error;
+package io.astrolib.jvx.psi.errors;
 
 /**
  * Created by skeswa on 5/30/16.

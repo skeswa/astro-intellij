@@ -1,4 +1,4 @@
-package io.astrolib.jvx.psi.element;
+package io.astrolib.jvx.psi.elements;
 
 import com.intellij.lang.ASTNode;
 import com.intellij.psi.PsiImportList;

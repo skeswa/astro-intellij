@@ -1,4 +1,4 @@
-package io.astrolib.jvx.psi.element;
+package io.astrolib.jvx.psi.elements;
 
 import com.intellij.lang.ASTNode;
 import com.intellij.openapi.diagnostic.Logger;
@@ -21,7 +21,7 @@ import org.jetbrains.annotations.Nullable;
  * @author skeswa
  */
 public class JVXClassElement extends CompositeElement implements Constants {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impl.source.tree.java.JVXClassElement");
+    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impls.source.tree.java.JVXClassElement");
 
     private static final TokenSet MODIFIERS_TO_REMOVE_IN_INTERFACE_BIT_SET = TokenSet.create(
             PUBLIC_KEYWORD, ABSTRACT_KEYWORD, STATIC_KEYWORD, FINAL_KEYWORD, NATIVE_KEYWORD);

@@ -7,14 +7,14 @@ import com.intellij.lang.LighterLazyParseableNode;
 import com.intellij.psi.JavaTokenType;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiJavaFile;
-import com.intellij.psi.impl.java.stubs.impl.PsiJavaFileStubImpl;
 import com.intellij.psi.impl.source.tree.*;
 import com.intellij.psi.stubs.LightStubBuilder;
 import com.intellij.psi.stubs.StubElement;
 import com.intellij.psi.tree.IElementType;
 import com.intellij.psi.tree.TokenSet;
 import com.intellij.util.io.StringRef;
-import io.astrolib.jvx.psi.element.JVXElementType;
+import io.astrolib.jvx.psi.elements.JVXElementType;
+import io.astrolib.jvx.psi.stub.impls.PsiJVXFileStubImpl;
 import org.jetbrains.annotations.NotNull;
 
 public class JVXLightStubBuilder extends LightStubBuilder {
@@ -33,7 +33,7 @@ public class JVXLightStubBuilder extends LightStubBuilder {
                 refText = JavaSourceUtil.getReferenceText(tree, ref);
             }
         }
-        return new PsiJavaFileStubImpl((PsiJavaFile)file, StringRef.fromString(refText), false);
+        return new PsiJVXFileStubImpl((PsiJavaFile)file, StringRef.fromString(refText), false);
     }
 
     @Override

@@ -34,7 +34,7 @@ import com.intellij.util.containers.HashSet;
 import com.intellij.util.containers.MostlySingularMultiMap;
 import com.intellij.util.indexing.IndexingDataKeys;
 import io.astrolib.jvx.psi.JVXLanguage;
-import io.astrolib.jvx.psi.element.JVXElementType;
+import io.astrolib.jvx.psi.elements.JVXElementType;
 import io.astrolib.jvx.psi.stub.JVXStubElementTypes;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
@@ -47,7 +47,7 @@ import java.util.List;
  * @author skeswa
  */
 public abstract class PsiJVXFileBaseImpl extends PsiFileImpl implements PsiJavaFile {
-    private static final Logger LOG = Logger.getInstance("#com.intellij.psi.impl.source.PsiJavaFileBaseImpl");
+    private static final Logger LOG = Logger.getInstance("#io.astrolib.jvx.psi.file.PsiJVXFileBaseImpl");
     @NonNls
     private static final String[] IMPLICIT_IMPORTS = { CommonClassNames.DEFAULT_PACKAGE };
     private final CachedValue<MostlySingularMultiMap<String, SymbolCollectingProcessor.ResultWithContext>> myResolveCache;

@@ -27,12 +27,12 @@ import com.intellij.openapi.roots.LanguageLevelProjectExtension;
 import com.intellij.pom.java.LanguageLevel;
 import com.intellij.psi.*;
 import com.intellij.psi.impl.java.stubs.JavaStubElementType;
-import com.intellij.psi.impl.source.PsiJavaFileImpl;
 import com.intellij.psi.impl.source.tree.ElementType;
 import com.intellij.psi.tree.IElementType;
 import com.intellij.psi.tree.IFileElementType;
 import com.intellij.psi.tree.TokenSet;
-import io.astrolib.jvx.psi.element.JVXElementType;
+import io.astrolib.jvx.psi.elements.JVXElementType;
+import io.astrolib.jvx.psi.file.PsiJVXFileImpl;
 import io.astrolib.jvx.psi.stub.JVXStubElementTypes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -100,8 +100,7 @@ public class JVXParserDefinition implements ParserDefinition {
 
     @Override
     public PsiFile createFile(final FileViewProvider viewProvider) {
-        // TODO(skeswa): correct this.
-        return new PsiJavaFileImpl(viewProvider);
+        return new PsiJVXFileImpl(viewProvider);
     }
 
     @Override

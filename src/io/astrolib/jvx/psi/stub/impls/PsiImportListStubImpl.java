@@ -1,9 +1,10 @@
-package io.astrolib.jvx.psi.stub;
+package io.astrolib.jvx.psi.stub.impls;
 
 import com.intellij.psi.PsiImportList;
 import com.intellij.psi.impl.java.stubs.PsiImportListStub;
 import com.intellij.psi.stubs.StubBase;
 import com.intellij.psi.stubs.StubElement;
+import io.astrolib.jvx.psi.stub.JVXStubElementTypes;
 
 /**
  * @author max

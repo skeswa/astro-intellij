@@ -24,8 +24,8 @@ import com.intellij.psi.TokenType;
 import com.intellij.psi.impl.source.tree.ElementType;
 import com.intellij.psi.tree.IElementType;
 import com.intellij.psi.tree.TokenSet;
-import io.astrolib.jvx.psi.error.JVXErrorMessage;
-import io.astrolib.jvx.psi.element.JVXElementType;
+import io.astrolib.jvx.psi.errors.JVXErrorMessage;
+import io.astrolib.jvx.psi.elements.JVXElementType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

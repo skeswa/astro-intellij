@@ -1,4 +1,4 @@
-package io.astrolib.jvx.psi.stub;
+package io.astrolib.jvx.psi.stub.impls;
 
 import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiJavaFile;
@@ -7,6 +7,7 @@ import com.intellij.psi.stubs.PsiFileStubImpl;
 import com.intellij.psi.tree.IStubFileElementType;
 import com.intellij.util.IncorrectOperationException;
 import com.intellij.util.io.StringRef;
+import io.astrolib.jvx.psi.stub.JVXStubElementTypes;
 
 /**
  * Created by skeswa on 6/1/16.
@@ -65,6 +66,6 @@ public class PsiJVXFileStubImpl extends PsiFileStubImpl<PsiJavaFile> implements 
 
     @Override
     public String toString() {
-        return "PsiJavaFileStub [" + myPackageName + "]";
+        return "PsiJVXFileStub [" + myPackageName + "]";
     }
 }

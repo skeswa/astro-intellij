@@ -2,7 +2,7 @@ package io.astrolib.jvx.psi.parser.statements.api;
 
 import com.intellij.psi.PsiReferenceExpression;
 import com.intellij.psi.PsiStatement;
-import io.astrolib.jvx.psi.element.JVXElementType;
+import io.astrolib.jvx.psi.elements.JVXElementType;
 import org.jetbrains.annotations.NotNull;
 
 /**

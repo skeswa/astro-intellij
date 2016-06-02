@@ -1,4 +1,4 @@
-package io.astrolib.jvx.psi.element;
+package io.astrolib.jvx.psi.elements;
 
 import com.intellij.pom.java.LanguageLevel;
 import com.intellij.psi.impl.source.tree.FileElement;

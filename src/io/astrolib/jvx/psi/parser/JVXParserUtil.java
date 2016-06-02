@@ -36,7 +36,7 @@ import com.intellij.psi.tree.TokenSet;
 import com.intellij.psi.util.PsiUtil;
 import com.intellij.util.indexing.IndexingDataKeys;
 import io.astrolib.jvx.psi.JVXLanguage;
-import io.astrolib.jvx.psi.element.JVXElementType;
+import io.astrolib.jvx.psi.elements.JVXElementType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.PropertyKey;
@@ -223,7 +223,7 @@ public class JVXParserUtil {
     return marker != null ? ((LighterASTNode)marker).getTokenType() : null;
   }
 
-  // used instead of PsiBuilder.error() as it keeps all subsequent error messages
+  // used instead of PsiBuilder.errors() as it keeps all subsequent errors messages
   public static void error(final PsiBuilder builder, final String message) {
     builder.mark().error(message);
   }
