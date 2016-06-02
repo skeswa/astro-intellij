@@ -5,6 +5,7 @@ import com.intellij.psi.tree.IStubFileElementType;
 import io.astrolib.jvx.psi.elements.*;
 import io.astrolib.jvx.psi.file.elements.JVXFileElementType;
 import io.astrolib.jvx.psi.stub.elements.JVXClassElementType;
+import io.astrolib.jvx.psi.stub.elements.JVXImportListElementType;
 import org.jetbrains.annotations.NotNull;
 
 /**

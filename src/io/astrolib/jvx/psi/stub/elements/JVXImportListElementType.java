@@ -1,4 +1,4 @@
-package io.astrolib.jvx.psi.elements;
+package io.astrolib.jvx.psi.stub.elements;
 
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.LighterAST;
@@ -10,7 +10,7 @@ import com.intellij.psi.stubs.IndexSink;
 import com.intellij.psi.stubs.StubElement;
 import com.intellij.psi.stubs.StubInputStream;
 import com.intellij.psi.stubs.StubOutputStream;
-import io.astrolib.jvx.psi.stub.elements.JVXStubElementType;
+import io.astrolib.jvx.psi.elements.JVXImportListElement;
 import io.astrolib.jvx.psi.stub.impls.PsiImportListStubImpl;
 import org.jetbrains.annotations.NotNull;
 
